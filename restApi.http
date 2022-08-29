@@ -1,0 +1,4 @@
+### RDP historical-pricing: retrieve time series pricing Interday summaries data
+POST  https://httpbin.org/delay/7
+Accept: application/json
+body
