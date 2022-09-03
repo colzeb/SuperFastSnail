@@ -1,0 +1,31 @@
+<template>
+
+    <lightning-card title="User">
+        <div class="slds-m-around_medium slds-list_horizontal slds-wrap">
+            <table class="slds-table slds-table_bordered slds-table_fixed-layout" border="1px solid"
+                bordercolor="#dddbda" role="grid">
+                <tr>
+                    <th style="background:#f3f2f2;">Id</th>
+                    <td>{userId}</td>
+                </tr>
+                <tr>
+                    <th style="background:#f3f2f2;">Name</th>
+                    <td>{user.name}</td>
+                </tr>
+                <tr>
+                    <th style="background:#f3f2f2;">Role</th>
+                    <td>{user.roleName}</td>
+                </tr>
+                <tr>
+                    <th style="background:#f3f2f2;">Profile</th>
+                    <td>{user.profileName}</td>
+                </tr>
+                <tr>
+                    <th style="background:#f3f2f2;">Manager</th>
+                    <td>{user.managerName}</td>
+                </tr>
+            </table>
+        </div>
+    </lightning-card>
+    
+</template>
