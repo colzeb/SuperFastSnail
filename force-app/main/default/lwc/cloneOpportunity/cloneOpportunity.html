@@ -1,5 +1,4 @@
 <template>
-
     <lightning-card>
         <h3 slot="title">
             <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
@@ -8,11 +7,13 @@
 
         <div class="slds-m-left_medium slds-m-right_medium">
             <h3>test3 {haveResult}</h3>
-            <template if:true={haveResult} >
-                <h3>inside template {opportunities}</h3>
-                <template for:each={opportunities} for:item="contact">
-                    <p key={contact.Id}>{contact.Name}</p>
+            <template if:true={haveResult}>
+                <template for:each={opportunities} for:item="opportunity">
+                    <li key={opportunity.id}>
+                        <p>{contact.Name}</p>
+                    </li>
                 </template>
+                <lightning-button type="brand" label="Next"></lightning-button>
             </template>
 
             <lightning-input type="text" label="Name" required="true"></lightning-input>
@@ -23,7 +24,6 @@
                 <lightning-button variant="brand" title="Clone" label="Clone"></lightning-button>
                 <lightning-button title="Cancel" label="Cancel" onclick={handleCancle}></lightning-button>
             </div>
-    </div>
+        </div>
     </lightning-card>
-    
 </template>
