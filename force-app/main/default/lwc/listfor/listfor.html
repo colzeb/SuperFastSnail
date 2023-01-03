@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="For Loop ">
+        <ul>
+        <template for:each={listName} for:item="name" for:index="index">
+            <li key={name}>{name}</li>
+            <span key={name}>{index}</span>
+        </template>
+    </ul>
+    </lightning-card>
+</template>
