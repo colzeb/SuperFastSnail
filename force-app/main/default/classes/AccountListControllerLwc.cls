@@ -6,6 +6,7 @@ public with sharing class AccountListControllerLwc {
       SELECT Name
       FROM Account
       WHERE NumberOfEmployees >= :numberOfEmployees
+      WITH SECURITY_ENFORCED
     ];
   }
 
