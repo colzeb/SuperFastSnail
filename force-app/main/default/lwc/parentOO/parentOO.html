@@ -1,0 +1,19 @@
+<template>
+  <lightning-card title="Parent OO">
+    <div class="slds-p-around_medium">
+      <h2>{name}</h2>
+      <lightning-input
+        class="patternFail"
+        type="search"
+        label="Name"
+        value={name}
+        onchange={handleNameChange}
+      ></lightning-input>
+      <lightning-button
+        label="Click Me"
+        onclick={handleClick}
+      ></lightning-button>
+    </div>
+  </lightning-card>
+  <c-child-o-o buttonlabel={name} onchildclick={handleChildClick}></c-child-o-o>
+</template>

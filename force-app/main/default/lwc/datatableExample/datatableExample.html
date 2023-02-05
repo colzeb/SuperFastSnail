@@ -1,0 +1,14 @@
+<template>
+  <lightning-datatable key-field="id" columns={columns} data={data}>
+  </lightning-datatable>
+  <lightning-button
+    label="Hello"
+    title="Nice"
+    onclick={handleClick}
+  ></lightning-button>
+  <lightning-button
+    label="call child api"
+    onclick={callChild}
+  ></lightning-button>
+  <c-selected-record record={record}> </c-selected-record>
+</template>

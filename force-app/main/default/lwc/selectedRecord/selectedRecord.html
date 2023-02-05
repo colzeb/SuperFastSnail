@@ -1,0 +1,10 @@
+<template>
+  <lightning-datatable
+    key-field="id"
+    data={data}
+    columns={columns}
+    hide-checkbox-column
+  ></lightning-datatable>
+
+  <lightning-button onclick={handleData} label="Refresh"></lightning-button>
+</template>

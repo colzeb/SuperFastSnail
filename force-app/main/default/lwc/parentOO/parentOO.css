@@ -1,0 +1,4 @@
+.patternFail::after {
+    content: "Only Alpha Numeric Characters Allowed";
+    color: red;
+}
