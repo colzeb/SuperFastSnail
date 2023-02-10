@@ -1,0 +1,22 @@
+<template>
+  <lightning-tree-grid
+    columns={columns}
+    data={data}
+    key-field="claimId"
+    onrowselection={handleRowSelection}
+    onrowaction={handleRowAction}
+  ></lightning-tree-grid>
+
+  <lightning-button
+    label="Save"
+    onclick={handleSave}
+    variant="brand"
+  ></lightning-button>
+
+  <lightning-flow-support
+    if:true={callFlow}
+    onflowstatuschange={handleFlowStatusChange}
+    flowname="boxFrom"
+    flowinput={flowInput}
+  ></lightning-flow-support>
+</template>
